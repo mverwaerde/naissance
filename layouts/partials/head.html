@@ -8,12 +8,14 @@
 <link rel="stylesheet" href="{{ "css/font-awesome.min.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/owl.carousel.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/owl.theme.css" | absURL }}">
-<!-- Theme stylesheet, if possible do not edit this stylesheet -->
+<!-- Theme stylesheet - defines CSS variables, loaded first -->
 {{ with .Site.Params.style }}
   <link href="{{ printf "css/style.%s.css" . | absURL }}" rel="stylesheet" id="theme-stylesheet">
 {{ else }}
   <link href="{{ "css/style.pink.css" | absURL }}" rel="stylesheet" id="theme-stylesheet">
 {{ end }}
+<!-- Common stylesheet - uses CSS variables from the theme -->
+<link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
  <!-- Responsivity for older IE -->
 <!-- Just in case -->
   {{ `
