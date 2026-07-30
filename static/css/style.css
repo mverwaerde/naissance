@@ -200,21 +200,10 @@ button i.fa {
 .open .dropdown-toggle.btn-ghost {
   background-image: none;
 }
-.btn-ghost.disabled,
-.btn-ghost[disabled],
+.btn-ghost:is(.disabled, [disabled]),
 fieldset[disabled] .btn-ghost,
-.btn-ghost.disabled:hover,
-.btn-ghost[disabled]:hover,
-fieldset[disabled] .btn-ghost:hover,
-.btn-ghost.disabled:focus,
-.btn-ghost[disabled]:focus,
-fieldset[disabled] .btn-ghost:focus,
-.btn-ghost.disabled:active,
-.btn-ghost[disabled]:active,
-fieldset[disabled] .btn-ghost:active,
-.btn-ghost.disabled.active,
-.btn-ghost[disabled].active,
-fieldset[disabled] .btn-ghost.active {
+.btn-ghost:is(.disabled, [disabled]):is(:hover, :focus, :active, .active),
+fieldset[disabled] .btn-ghost:is(:hover, :focus, :active, .active) {
   background-color: transparent;
   border-color: var(--color-primary);
 }
@@ -250,21 +239,10 @@ fieldset[disabled] .btn-ghost.active {
 .open .dropdown-toggle.btn-ghost-black {
   background-image: none;
 }
-.btn-ghost-black.disabled,
-.btn-ghost-black[disabled],
+.btn-ghost-black:is(.disabled, [disabled]),
 fieldset[disabled] .btn-ghost-black,
-.btn-ghost-black.disabled:hover,
-.btn-ghost-black[disabled]:hover,
-fieldset[disabled] .btn-ghost-black:hover,
-.btn-ghost-black.disabled:focus,
-.btn-ghost-black[disabled]:focus,
-fieldset[disabled] .btn-ghost-black:focus,
-.btn-ghost-black.disabled:active,
-.btn-ghost-black[disabled]:active,
-fieldset[disabled] .btn-ghost-black:active,
-.btn-ghost-black.disabled.active,
-.btn-ghost-black[disabled].active,
-fieldset[disabled] .btn-ghost-black.active {
+.btn-ghost-black:is(.disabled, [disabled]):is(:hover, :focus, :active, .active),
+fieldset[disabled] .btn-ghost-black:is(:hover, :focus, :active, .active) {
   background-color: transparent;
   border-color: var(--color-black);
 }
@@ -300,21 +278,10 @@ fieldset[disabled] .btn-ghost-black.active {
 .open .dropdown-toggle.btn-white {
   background-image: none;
 }
-.btn-white.disabled,
-.btn-white[disabled],
+.btn-white:is(.disabled, [disabled]),
 fieldset[disabled] .btn-white,
-.btn-white.disabled:hover,
-.btn-white[disabled]:hover,
-fieldset[disabled] .btn-white:hover,
-.btn-white.disabled:focus,
-.btn-white[disabled]:focus,
-fieldset[disabled] .btn-white:focus,
-.btn-white.disabled:active,
-.btn-white[disabled]:active,
-fieldset[disabled] .btn-white:active,
-.btn-white.disabled.active,
-.btn-white[disabled].active,
-fieldset[disabled] .btn-white.active {
+.btn-white:is(.disabled, [disabled]):is(:hover, :focus, :active, .active),
+fieldset[disabled] .btn-white:is(:hover, :focus, :active, .active) {
   background-color: transparent;
   border-color: var(--color-white);
 }
@@ -1688,21 +1655,10 @@ hr {
 .open .dropdown-toggle.btn-primary {
   background-image: none;
 }
-.btn-primary.disabled,
-.btn-primary[disabled],
+.btn-primary:is(.disabled, [disabled]),
 fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
+.btn-primary:is(.disabled, [disabled]):is(:hover, :focus, :active, .active),
+fieldset[disabled] .btn-primary:is(:hover, :focus, :active, .active) {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
 }
@@ -1729,21 +1685,10 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-transparent {
   background-image: none;
 }
-.btn-transparent.disabled,
-.btn-transparent[disabled],
+.btn-transparent:is(.disabled, [disabled]),
 fieldset[disabled] .btn-transparent,
-.btn-transparent.disabled:hover,
-.btn-transparent[disabled]:hover,
-fieldset[disabled] .btn-transparent:hover,
-.btn-transparent.disabled:focus,
-.btn-transparent[disabled]:focus,
-fieldset[disabled] .btn-transparent:focus,
-.btn-transparent.disabled:active,
-.btn-transparent[disabled]:active,
-fieldset[disabled] .btn-transparent:active,
-.btn-transparent.disabled.active,
-.btn-transparent[disabled].active,
-fieldset[disabled] .btn-transparent.active {
+.btn-transparent:is(.disabled, [disabled]):is(:hover, :focus, :active, .active),
+fieldset[disabled] .btn-transparent:is(:hover, :focus, :active, .active) {
   background-color: transparent;
   border-color: var(--color-gray);
 }
