@@ -5,7 +5,7 @@ permalinks:
   pages: /:slug
 
 params:
-  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Style options: pink, blue, green, red, sea, violet
   # Use custom.css for your custom styling
   style: "violet"
 
