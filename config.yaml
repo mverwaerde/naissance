@@ -7,7 +7,7 @@ permalinks:
 params:
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-  style: "green"
+  style: "violet"
 
   # Contact form uses www.formspree.io
   endpoint: "xnqlwaal"
