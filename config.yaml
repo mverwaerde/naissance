@@ -5,9 +5,9 @@ permalinks:
   pages: /:slug
 
 params:
-  # Style options: pink, blue, green, red, sea, violet
+  # Style options: pink, blue, green, red, sea, violet, gold
   # Use custom.css for your custom styling
-  style: "violet"
+  style: "gold"
 
   # Contact form uses www.formspree.io
   endpoint: "xnqlwaal"
