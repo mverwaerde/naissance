@@ -58,9 +58,7 @@ body {
 button {
   transition: all 0.2s ease-out;
 }
-button i.fa {
-  margin: 0 5px;
-}
+
 .btn-ghost {
   color: var(--color-primary);
   background-color: transparent;
@@ -144,8 +142,7 @@ fieldset[disabled] .btn-ghost:is(:hover, :focus, :active, .active) {
     }
 
     &:before {
-      font-family: 'FontAwesome';
-      content: '\f105';
+      content: '❯';
       margin: 0 5px 0 -15px;
       color: var(--color-gray-light);
     }
@@ -209,8 +206,7 @@ fieldset[disabled] .btn-ghost:is(:hover, :focus, :active, .active) {
   list-style-type: none;
 }
 .content-column-content ul li:before {
-  font-family: 'FontAwesome';
-  content: '\f105';
+  content: '❯';
   margin: 0 5px 0 -15px;
   color: var(--color-primary);
 }
@@ -343,14 +339,12 @@ p.social {
 
   a {
     margin: 0 10px 10px 0;
-    color: var(--color-white);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    line-height: 40px;
-    font-size: 15px;
-    text-align: center;
     vertical-align: bottom;
     border: solid 1px var(--color-gray-light);
     color: var(--color-gray-light);
@@ -359,11 +353,6 @@ p.social {
     &:hover {
       color: var(--color-primary);
       border-color: var(--color-primary);
-    }
-
-    i {
-      vertical-align: bottom;
-      line-height: 40px;
     }
   }
 
@@ -406,13 +395,8 @@ p.social {
       width: 60px;
       height: 60px;
       border-radius: 30px;
-      line-height: 60px;
-      font-size: 25px;
     }
 
-    i {
-      line-height: 60px;
-    }
   }
 }
 .copyright {
@@ -571,8 +555,7 @@ p.social {
       transform: translate(0, -50%);
       opacity: 0;
       transition: all 0.2s ease-out;
-      font-family: 'FontAwesome';
-      content: '\f105';
+      content: '❯';
       text-align: center;
       font-size: 50px;
       color: var(--color-gray);
