@@ -157,8 +157,6 @@ section.background-secondary {
 }
 a,
 button {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 a i.fa,
@@ -306,8 +304,6 @@ fieldset[disabled] .btn-white:is(:hover, :focus, :active, .active) {
   border-radius: 30px;
   border: solid 1px var(--color-primary);
   color: var(--color-primary);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-size: 30px;
   margin: 0 auto 30px;
@@ -351,8 +347,6 @@ SIDEBAR + RIGHT COLUMN
 .sidebar-heading a {
   color: var(--color-black);
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .sidebar-heading a:hover {
@@ -454,8 +448,6 @@ SIDEBAR + RIGHT COLUMN
 .small-navbar-heading a {
   color: var(--color-black);
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .small-navbar-heading a:hover {
@@ -471,8 +463,6 @@ OFF-CANVAS SIDEBAR BEHAVIOUR
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
     opacity: 1;
   }
@@ -603,8 +593,6 @@ p.social a {
   vertical-align: bottom;
   border: solid 1px var(--color-gray-light);
   color: var(--color-gray-light);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   /*
              &.facebook {background-color: #4460ae; border-color: #4460ae;}
@@ -767,9 +755,6 @@ EKKO LIGHTBOX
   color: var(--color-white);
   opacity: 0;
   text-decoration: none !important;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 .ekko-lightbox-nav-overlay a:empty {
@@ -807,8 +792,6 @@ a:active {
   margin-bottom: 30px;
   position: relative;
   box-shadow: 0 0 5px var(--color-gray-lightest);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -843,8 +826,6 @@ a:active {
   top: 0;
   padding: 15px 20px 15px;
   opacity: 0;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: var(--color-gray);
 }
@@ -860,8 +841,6 @@ a:active {
   top: 30%;
   opacity: 0;
   padding-left: 20px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   text-align: center;
 }
@@ -904,8 +883,6 @@ a:active {
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 .box-masonry .box-masonry-image.with-hover-icon:after {
@@ -918,8 +895,6 @@ a:active {
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   opacity: 0;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-family: 'FontAwesome';
   content: '\f105';
@@ -1009,8 +984,6 @@ a:active {
   -webkit-transform: translate(0, 100%);
   -ms-transform: translate(0, 100%);
   transform: translate(0, 100%);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: var(--color-white);
   padding: 0 20px;
@@ -1033,8 +1006,6 @@ a:active {
   -webkit-transform: translate(0, -150%);
   -ms-transform: translate(0, -150%);
   transform: translate(0, -150%);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: var(--color-white);
   padding: 0 20px;
@@ -1091,8 +1062,6 @@ a:active {
   -webkit-transform: translate(0, 100%);
   -ms-transform: translate(0, 100%);
   transform: translate(0, 100%);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: var(--color-white);
   padding: 0 20px;
@@ -1125,8 +1094,6 @@ a:active {
   -webkit-transform: translate(0, -150%);
   -ms-transform: translate(0, -150%);
   transform: translate(0, -150%);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: var(--color-white);
   padding: 0 20px;
@@ -1599,7 +1566,6 @@ hr {
   line-height: 24px;
   text-align: center;
   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
-  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 /* breadcrumbs */
