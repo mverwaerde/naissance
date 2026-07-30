@@ -441,26 +441,6 @@ p.social {
     text-align: center !important;
   }
 }
-.ekko-lightbox-nav-overlay a {
-  z-index: 100;
-  display: block;
-  width: 49%;
-  height: 100%;
-  font-size: 30px;
-  color: var(--color-white);
-  opacity: 0;
-  text-decoration: none !important;
-  transition: opacity 0.5s;
-}
-.ekko-lightbox-nav-overlay a:empty {
-  width: 49%;
-  color: transparent;
-}
-a:active {
-  text-decoration: none;
-  opacity: 1;
-  color: var(--color-white);
-}
 .grid {
   margin-right: -15px;
   margin-left: -15px;
