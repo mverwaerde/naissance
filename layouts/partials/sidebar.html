@@ -13,7 +13,7 @@
 
     {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
       <a href="{{ printf "categories/%s" $key | absURL }}" class="btn btn-primary">
-        {{ $key }} <span class="badge badge-pill">{{ len $taxonomy }}</span>
+        {{ $key }} <span class="badge">{{ len $taxonomy }}</span>
       </a>
     {{ end }}
     
