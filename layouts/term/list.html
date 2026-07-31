@@ -1,14 +1,9 @@
 {{ define "main" }}
 <div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
   {{ partial "mobile_nav_toggle.html" . }}
-  <div class="row">
-
-    <div class="content-column-content">
-      <h1>{{ .Title }}</h1>
-    </div>
-    {{ range .RegularPages }}
-      {{ partial "portfolio.html" . }}
-    {{ end }}
+  <div class="content-column-content">
+    <h1>{{ .Title }}</h1>
   </div>
+  {{ partial "portfolio.html" .RegularPages }}
 </div>
 {{ end }}
