@@ -6,21 +6,15 @@ Startup Template By Bootstrapious.com
 ========================================= */
 
 :root {
-  --color-four: #3c2967;
   --color-primary: #379392;
   --color-primary-dark: #296e6d;
   --color-primary-darker: #2c7575;
   --color-primary-darkest: #266666;
   --color-primary-hover: #225b5b;
   --color-primary-light: #8ed5d4;
-  --color-progress-skill1: #69c7c6;
-  --color-progress-skill2: #57c0bf;
-  --color-progress-skill3: #45b8b7;
-  --color-progress-skill4: #3ea6a4;
   --color-secondary: #4fb0c6;
   --color-secondary-border: #2b7484;
   --color-tertiary: #3f699a;
   --color-tertiary-hover: #3795ab;
   --color-shadow: #87bebe;
-  --color-nav-accent: #333333;
 }
