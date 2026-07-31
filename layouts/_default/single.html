@@ -61,7 +61,7 @@
     </div>
     <div class="col-md-4">
       {{ with .Params.image }}
-        {{ partial "img.html" (dict "src" . "alt" "") }}
+        {{ partial "img.html" (dict "src" . "alt" "" "sizes" "(min-width: 768px) 33vw, 100vw") }}
       {{ end }}
     </div>
   </div>
