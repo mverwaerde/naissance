@@ -1,6 +1,11 @@
-{{ $cfg := "" }}
-{{ $path := printf "static/%s" .src }}
-{{ if fileExists $path }}{{ $cfg = imageConfig $path }}{{ end }}
-<img src="{{ .src | absURL }}" alt="{{ .alt }}" class="img-responsive"
-     {{ with $cfg }}width="{{ .Width }}" height="{{ .Height }}"{{ end }}
-     loading="lazy" decoding="async">
+{{ $sizes := .sizes | default "(min-width: 768px) 33vw, 100vw" }}
+{{ with resources.Get .src }}
+  {{ $s := .Resize "320x webp q82" }}
+  {{ $m := .Resize "480x webp q82" }}
+  {{ $l := .Resize "640x webp q82" }}
+  <img src="{{ $m.RelPermalink }}" alt="{{ $.alt }}" class="img-responsive"
+       srcset="{{ $s.RelPermalink }} 320w, {{ $m.RelPermalink }} 480w, {{ $l.RelPermalink }} 640w"
+       sizes="{{ $sizes }}"
+       width="{{ $m.Width }}" height="{{ $m.Height }}"
+       loading="lazy" decoding="async">
+{{ end }}
