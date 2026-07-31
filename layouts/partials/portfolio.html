@@ -4,7 +4,7 @@
       <div class="box-masonry">
         {{ if and (isset .Params "image") .Params.image }}
           <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+            {{ partial "img.html" (dict "src" .Params.image "alt" "") }}
           </a>
         {{ end }}
         <div class="box-masonry-text">

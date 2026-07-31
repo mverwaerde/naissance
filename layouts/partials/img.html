@@ -1,0 +1,6 @@
+{{ $cfg := "" }}
+{{ $path := printf "static/%s" .src }}
+{{ if fileExists $path }}{{ $cfg = imageConfig $path }}{{ end }}
+<img src="{{ .src | absURL }}" alt="{{ .alt }}" class="img-responsive"
+     {{ with $cfg }}width="{{ .Width }}" height="{{ .Height }}"{{ end }}
+     loading="lazy" decoding="async">

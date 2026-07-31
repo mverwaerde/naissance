@@ -60,7 +60,9 @@
       </div>
     </div>
     <div class="col-md-4">
-      <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+      {{ with .Params.image }}
+        {{ partial "img.html" (dict "src" . "alt" "") }}
+      {{ end }}
     </div>
   </div>
 </div>
