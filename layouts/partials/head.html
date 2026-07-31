@@ -1,20 +1,18 @@
+{{ $css := resources.Get "css/style.css" }}
+{{ $themeFile := printf "css/style.%s.css" (.Site.Params.style | default "pink") }}
+{{ $theme := resources.Get $themeFile }}
+{{ if not $theme }}
+  {{ $theme = resources.Get "css/style.pink.css" }}
+{{ end }}
+{{ $custom := resources.Get "css/custom.css" }}
+{{ $bundle := slice $css $theme $custom | resources.Concat "css/bundle.css" | minify | fingerprint }}
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {{ with .Site.Title }}<title>{{ . }}</title>{{ end }}
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Common stylesheet - defines default CSS variables -->
-<link href="{{ "css/style.css" | absURL }}" rel="stylesheet">
-<!-- Theme stylesheet - overrides CSS variables for the selected theme -->
-{{ with .Site.Params.style }}
-  <link href="{{ printf "css/style.%s.css" . | absURL }}" rel="stylesheet" id="theme-stylesheet">
-{{ else }}
-  <link href="{{ "css/style.pink.css" | absURL }}" rel="stylesheet" id="theme-stylesheet">
-{{ end }}
-
-
-<!-- Custom stylesheet - for your changes -->
-<link href="{{ "css/custom.css" | absURL }}" rel="stylesheet">
+<!-- Common + theme + custom stylesheets, minified and fingerprinted -->
+<link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}">
 {{ with .OutputFormats.Get "RSS" }}
   {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end }}
