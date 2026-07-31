@@ -237,9 +237,6 @@ body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
 }
-.section-inverse h6 {
-  color: var(--color-white);
-}
 .img-responsive {
   margin: 0 auto;
 }
@@ -461,39 +458,6 @@ fieldset[disabled] .btn-ghost:is(:hover, :focus, :active, .active) {
     /* 6 columns */
   }
 }
-.customer img {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.customer img:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-@media (max-width: 991px) {
-  .sign-up-form .form-control {
-    margin-bottom: 20px;
-  }
-  .sign-up-form .btn {
-    margin-bottom: 20px;
-  }
-  .sign-up-form .form-control {
-    margin-bottom: 20px;
-  }
-  .sign-up-form .btn {
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .sign-up-form .form-control {
-    width: 350px;
-  }
-  .sign-up-form .form-control {
-    width: 350px;
-  }
-}
 .contact-form {
   margin-bottom: 20px;
 }
@@ -629,50 +593,8 @@ p.social {
     }
   }
 
-  .box-masonry-hover-text-header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    padding: 15px 20px 15px;
-    opacity: 0;
-    transition: all 0.2s ease-out;
-    color: var(--color-gray);
-
-    p {
-      font-size: 14px;
-    }
-
-    h4 a {
-      color: var(--color-gray);
-    }
-  }
-
-  .box-masonry-hover-center {
-    position: absolute;
-    width: 100%;
-    top: 30%;
-    opacity: 0;
-    padding-left: 20px;
-    transition: all 0.2s ease-out;
-    text-align: center;
-
-    .see-more-icon {
-      color: var(--color-gray);
-      font-size: 50px;
-    }
-  }
-
   &:hover {
     box-shadow: 0 0 5px var(--color-gray-light);
-
-    .box-masonry-hover-text-header {
-      opacity: 1;
-    }
-
-    .box-masonry-hover-center {
-      opacity: 1;
-    }
 
     .box-masonry-image.with-hover-overlay:before {
       opacity: 0.8;
@@ -729,9 +651,6 @@ p.social {
     }
   }
 }
-#style-switch h4 {
-  color: var(--color-gray);
-}
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -782,10 +701,6 @@ fieldset[disabled] .btn-primary:is(:hover, :focus, :active, .active) {
   color: var(--color-primary);
   background-color: var(--color-white);
 }
-.btn-transparent .badge {
-  color: transparent;
-  background-color: var(--color-gray);
-}
 .btn-lg {
   padding: 10px 16px;
   font-size: 20px;
@@ -830,36 +745,6 @@ label {
 }
 .form-group {
   margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  .text-center-xs {
-    text-align: center !important;
-  }
-  .text-center-xs img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .text-center-xs img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .text-center-sm {
-    text-align: center !important;
-  }
-  .text-center-sm img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .text-center-sm img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 p {
   margin: 0 0 24px;

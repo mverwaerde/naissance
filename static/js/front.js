@@ -90,15 +90,4 @@ function utils() {
             window.open(el.getAttribute('href'));
         });
     });
-    document.querySelectorAll('.scroll-to').forEach(function (el) {
-        el.addEventListener('click', function (e) {
-            e.preventDefault();
-            var parts = el.getAttribute('href').split('#');
-            var target = document.getElementById(parts[1]);
-            if (target) {
-                var top = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                window.scrollTo({ top: top, behavior: 'smooth' });
-            }
-        });
-    });
 }
