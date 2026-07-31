@@ -37,13 +37,7 @@
   --color-secondary-border: #338c82;
   --color-tertiary: #008c9e;
   --color-tertiary-hover: #41b1a5;
-  --color-four: #feee7d;
   --color-shadow: #f597b6;
-  --color-progress-skill1: #f8afc7;
-  --color-progress-skill2: #f598b6;
-  --color-progress-skill3: #f381a6;
-  --color-progress-skill4: #f16995;
-  --color-nav-accent: #f381a6;
 }
 
 /* === Bootstrap compat layer ===
