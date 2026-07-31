@@ -1,11 +1,5 @@
-{{ define "main" }}<div class="col-xs-12 col-sm-8 col-md-9 content-column">
+{{ define "main" }}<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
   {{ partial "mobile_nav_toggle.html" . }}
-  <div class="grid">
-    <div class="row">
-      {{ range sort (where .Site.RegularPages "Section" "posts") ".Params.Progress" "asc" }}
-        {{ partial "portfolio.html" . }}
-      {{ end }}
-    </div>
-  </div>
+  {{ partial "portfolio.html" (where .Site.RegularPages "Section" "posts") }}
 </div>
 {{ end }}

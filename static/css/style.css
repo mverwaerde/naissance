@@ -331,10 +331,6 @@ fieldset[disabled] .btn-ghost:is(:hover, :focus, :active, .active) {
   background: var(--color-white);
   min-height: 100vh;
 }
-.grid {
-  padding-top: 5px;
-  overflow-y: hidden;
-}
 .content-column-content {
   padding-left: 20px;
   padding-right: 20px;
@@ -546,9 +542,27 @@ p.social {
     text-align: center !important;
   }
 }
-.grid {
-  margin-right: -15px;
-  margin-left: -15px;
+.portfolio-grid {
+  column-count: 1;
+  column-gap: 30px;
+}
+@media (min-width: 768px) {
+  .portfolio-grid {
+    column-count: 2;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-grid {
+    column-count: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-grid {
+    column-count: 4;
+  }
+}
+.portfolio-item {
+  break-inside: avoid;
 }
 .box-masonry {
   background: var(--color-white);
