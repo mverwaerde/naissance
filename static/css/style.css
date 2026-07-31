@@ -45,6 +45,194 @@
   --color-progress-skill4: #f16995;
   --color-nav-accent: #f381a6;
 }
+
+/* === Bootstrap compat layer ===
+   Reproduces the Bootstrap 3.3.6 + normalize rules the theme actually uses,
+   so bootstrap.min.css can be removed without visual change. */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1, h2, h3 { margin-top: 20px; margin-bottom: 10px; }
+h4, h5, h6 { margin-top: 10px; margin-bottom: 10px; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ol ol, ol ul, ul ol, ul ul { margin-bottom: 0; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+textarea.form-control {
+  height: auto;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary:active, .btn-primary.active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 10px;
+  position: relative;
+  top: -1px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.text-muted {
+  color: #777;
+}
+
+.visible-xs {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .visible-xs { display: block !important; }
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+
+[class*="col-"] {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-12, .col-xs-6 { float: left; }
+.col-xs-12 { width: 100%; }
+.col-xs-6 { width: 50%; }
+
+@media (min-width: 768px) {
+  .col-sm-8, .col-sm-6, .col-sm-4 { float: left; }
+  .col-sm-8 { width: 66.66666667%; }
+  .col-sm-6 { width: 50%; }
+  .col-sm-4 { width: 33.33333333%; }
+}
+
+@media (min-width: 992px) {
+  .col-md-9, .col-md-8, .col-md-6, .col-md-4, .col-md-3, .col-md-12 { float: left; }
+  .col-md-9 { width: 75%; }
+  .col-md-8 { width: 66.66666667%; }
+  .col-md-6 { width: 50%; }
+  .col-md-4 { width: 33.33333333%; }
+  .col-md-3 { width: 25%; }
+  .col-md-12 { width: 100%; }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-8, .col-lg-3 { float: left; }
+  .col-lg-8 { width: 66.66666667%; }
+  .col-lg-3 { width: 25%; }
+}
+
 body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
