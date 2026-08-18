@@ -1,10 +1,10 @@
 ---
-title: "Sac à dos à langer"
+title: "Sac à langer"
 categories: [équipement]
-image: "img/sac-a-dos-langer.webp"
-website: ""
+image: "img/sac-a-langer.webp"
+website: "https://hindbag.fr/products/sac-a-langer-basile-olive"
 
-price: 59.90
+price: 89
 progress: 0
 contrib: []
 acquired: false
