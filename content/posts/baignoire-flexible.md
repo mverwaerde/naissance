@@ -1,13 +1,11 @@
 ---
-title: "Baignoire Stokke Flexibath"
+title: "Baignoire Maxi Cosy Indigo Plus + Support indigo Bundle"
 categories: [mobilier]
-image: "img/stokke_flexibath_baignoire.webp"
-website: ""
+image: "img/baignoire.webp"
+website: "https://www.maxi-cosi.fr/a-la-maison/indigo-plus-stand?color_swatch_id=6286"
 
-price: 0
+price: 139.98
 progress: 0
 contrib:
-  - name: Alice A.
-    donate: 0
-acquired: true
+acquired: false
 ---
