@@ -63,6 +63,9 @@
       {{ with .Params.image }}
         {{ partial "img.html" (dict "src" . "alt" "" "sizes" "(min-width: 768px) 33vw, 100vw") }}
       {{ end }}
+      {{ with .Params.website }}
+        <p><a class="btn btn-ghost" href="{{ . }}" target="_blank" rel="noopener">Voir le produit</a></p>
+      {{ end }}
     </div>
   </div>
 </div>

@@ -1,14 +1,12 @@
 ---
 title: "Babyzen Yoyo Protection pluie 6+"
 categories: [Poussette]
-image: "img/yoyo-pluie-6+.webp"
-website: ""
+image: "img/pluie-6-plus.webp"
+website: "https://www.stokke.com/FRA/fr-fr/654901.html"
 
-price: 25
-progress: 25
+price: 22.5
+progress: 0
 contrib: 
-  - name: Christel C.
-    donate: 25
 acquired: false
 ---
 

@@ -7,5 +7,5 @@ website: "https://www.greenweez.com/easy-dort-3-draps-housse-40x90-2-proteges-ma
 price: 41.50
 progress: 0
 contrib: []
-acquired: true
+acquired: false
 ---

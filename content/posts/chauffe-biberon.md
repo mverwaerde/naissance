@@ -2,14 +2,10 @@
 title: "Chauffe Biberon"
 categories: [équipement]
 image: "img/chauffe-biberon.webp"
-website: "https://babymoov.com/products/chauffe-biberons-nutrismart"
+website: "https://www.beaba.com/fr-fr/chauffe-biberons-et-preparateurs/chauffe-biberon-babymilk-second-night-blue-911720.html"
 
-price: 30
-progress: 30
+price: 55
+progress: 0
 contrib:
-- name: Laura P.
-  donate: 15
-- name: Guillaume M.
-  donate: 15
-acquired: true
+acquired: false
 --- 
