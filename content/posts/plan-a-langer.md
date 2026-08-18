@@ -2,12 +2,10 @@
 title: "Plan à langer"
 categories: [Mobilier]
 image: "img/plan-a-langer.webp"
-website: "https://www.natalys.com/plan--a-langer-incline-sofalange-21PSSO002MAL000.html"
+website: "https://www.vertbaudet.fr/matelas-a-langer-en-coton-issu-de-l-agriculture-biologique-happy-sky-multicolore.htm?ProductId=341007278&FiltreCouleur=0201"
 
-price: 55
-progress: 55
+price: 52,99
+progress: 0
 contrib:
-  - name: Marine L.
-    donate: 55
-acquired: true
+acquired: false
 --- 
