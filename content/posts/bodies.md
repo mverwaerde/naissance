@@ -6,7 +6,7 @@ website: "https://www.petit-bateau.fr/lot-de-5-bodies-croises-blancs-manches-cou
 
 price: 35.90
 progress: 0
-acquired: false
+acquired: true
 # contrib:
 #   - name: Anonyme
 #   - donate: 0

@@ -7,7 +7,7 @@ website: ""
 price: 35
 progress: 35
 contrib:
-  - name: Marie D.
-    donate: 35
+  - name: Midhu M.
+    donate: 0
 acquired: true
 ---
