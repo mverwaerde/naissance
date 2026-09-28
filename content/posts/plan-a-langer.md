@@ -7,5 +7,5 @@ website: "https://www.vertbaudet.fr/matelas-a-langer-en-coton-issu-de-l-agricult
 price: 105.98
 progress: 0
 contrib:
-acquired: false
+acquired: true
 --- 

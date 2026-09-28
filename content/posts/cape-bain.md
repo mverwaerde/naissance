@@ -7,5 +7,5 @@ website: ""
 price: 27.99
 progress: 0
 contrib:
-acquired: false
+acquired: true
 --- 
