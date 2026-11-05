@@ -7,5 +7,5 @@ website: "https://www.beaba.com/fr-fr/chauffe-biberons-et-preparateurs/chauffe-b
 price: 55
 progress: 0
 contrib:
-acquired: false
+acquired: true
 --- 

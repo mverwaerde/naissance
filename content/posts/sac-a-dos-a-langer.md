@@ -7,5 +7,5 @@ website: "https://hindbag.fr/products/sac-a-langer-basile-olive"
 price: 89
 progress: 0
 contrib: []
-acquired: false
+acquired: true
 ---

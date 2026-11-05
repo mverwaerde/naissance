@@ -6,7 +6,7 @@ website: "https://www.philips.fr/c-p/SCD503_26/avent-audio-monitors-ecoute-bebe-
 
 price: 69.90
 progress: 0
-acquired: false
+acquired: true
 # contrib:
 #   - name: Anonyme
 #   - donate: 0
